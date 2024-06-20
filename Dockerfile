@@ -19,4 +19,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Command to run your application
-CMD ["python", "-m", "flask", "--app", "./machine-learning-models/api", "run"]
+CMD ["python", "-m", "flask", "--app", "api", "run"]
