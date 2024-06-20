@@ -10,6 +10,7 @@ CORS(app)
 @app.route("/", methods=["POST"])
 
 def api_function():
+    print("Received Request!!!")
     data = json.loads(request.data)
 
     title = data['title']
