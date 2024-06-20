@@ -32,3 +32,8 @@ def api_function():
         'probability': probability
     })
     
+@app.route("/", methods=["GET"])
+def test():
+    return jsonify({
+        'message': 'Hello World'
+    })
