@@ -19,4 +19,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Command to run your application
-CMD ["python", "-m", "flask", "--app", "api", "run", "--port=80"]
+CMD ["python", "-m", "flask", "--app", "api", "run", "--port=80", "--host=0.0.0.0"]
